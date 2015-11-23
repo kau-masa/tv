@@ -1,0 +1,1076 @@
+[
+  {
+    "version": "1.2.0"
+  },
+  {
+    "activated": true,
+    "metadata": {
+      "label": ""
+    },
+    "properties": {},
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "customVolume",
+                  "op": {
+                    "type": "integer",
+                    "value": "25"
+                  }
+                },
+                "children": [],
+                "id": "69276cb8-ec9a-4e31-aa52-52a35ad1a991",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "customPause",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "4e4eff26-327f-4821-b9de-300c97fd0ac0",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "learning",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "9c4da431-79fa-4f06-bd11-ca587fc2226f",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "phoneState",
+                  "op": {
+                    "type": "string",
+                    "value": "standBy"
+                  }
+                },
+                "children": [],
+                "id": "92b3597f-18a6-423b-9fee-bd5fb8e9e215",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "tvState",
+                  "op": {
+                    "type": "string",
+                    "value": "off"
+                  }
+                },
+                "children": [],
+                "id": "46f48780-4b6a-4771-b9ac-2abc4587c1fc",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "currentVolume",
+                  "op": {
+                    "type": "integer",
+                    "value": "50"
+                  }
+                },
+                "children": [],
+                "id": "5978201d-69a0-43b5-8306-cf7a9b9be597",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "previousVolume",
+                  "op": {
+                    "type": "entityKnowledge",
+                    "value": "currentVolume"
+                  }
+                },
+                "children": [],
+                "id": "3b47b27a-23bc-4d31-814e-64b7c3a867b4",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "currentPause",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
+                  }
+                },
+                "children": [],
+                "id": "9dd2b77c-6db0-46d0-be17-ddacc23d531a",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "previousPause",
+                  "op": {
+                    "type": "entityKnowledge",
+                    "value": "currentPause"
+                  }
+                },
+                "children": [],
+                "id": "4ad9d25b-905b-4fdb-a3a4-4f81dcb5ca95",
+                "type": "set"
+              }
+            ],
+            "id": "60a877f0-9df2-4249-8519-4fdb79213823",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "boolean",
+                "value": "false"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "active": "false"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "Home presence"
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "globalKnowledge",
+                            "value": "sensors.presence"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Get Tv State"
+                                },
+                                "properties": {
+                                  "name": "GetDeviceValue",
+                                  "inputParams": [
+                                    {
+                                      "key": "device",
+                                      "type": "string",
+                                      "value": "craftTV"
+                                    },
+                                    {
+                                      "key": "attribute",
+                                      "type": "string",
+                                      "value": "state"
+                                    },
+                                    {
+                                      "key": "provider",
+                                      "type": "string",
+                                      "value": "sami"
+                                    }
+                                  ],
+                                  "outputParams": [
+                                    {
+                                      "key": "state",
+                                      "type": "entityKnowledge",
+                                      "value": "tvState"
+                                    }
+                                  ]
+                                },
+                                "children": [],
+                                "id": "6f73c439-8b69-4bbc-8fcc-4e7f4d27d4d4",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Get TV Pause"
+                                },
+                                "properties": {
+                                  "name": "GetDeviceValue",
+                                  "inputParams": [
+                                    {
+                                      "key": "device",
+                                      "type": "string",
+                                      "value": "craftTV"
+                                    },
+                                    {
+                                      "key": "attribute",
+                                      "type": "string",
+                                      "value": "pause"
+                                    },
+                                    {
+                                      "key": "provider",
+                                      "type": "string",
+                                      "value": "sami"
+                                    }
+                                  ],
+                                  "outputParams": [
+                                    {
+                                      "key": "pause",
+                                      "type": "entityKnowledge",
+                                      "value": "currentPause"
+                                    }
+                                  ]
+                                },
+                                "children": [],
+                                "id": "dc81582e-1e7f-4113-b6ef-5a521497b902",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Get TV volume"
+                                },
+                                "properties": {
+                                  "name": "GetDeviceValue",
+                                  "inputParams": [
+                                    {
+                                      "key": "device",
+                                      "type": "string",
+                                      "value": "craftTV"
+                                    },
+                                    {
+                                      "key": "attribute",
+                                      "type": "string",
+                                      "value": "volume"
+                                    },
+                                    {
+                                      "key": "provider",
+                                      "type": "string",
+                                      "value": "sami"
+                                    }
+                                  ],
+                                  "outputParams": [
+                                    {
+                                      "key": "volume",
+                                      "type": "entityKnowledge",
+                                      "value": "currentVolume"
+                                    }
+                                  ]
+                                },
+                                "children": [],
+                                "id": "71b33a67-0999-4150-ab9f-f7b1bbc11291",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Get Phone State"
+                                },
+                                "properties": {
+                                  "name": "GetDeviceValue",
+                                  "inputParams": [
+                                    {
+                                      "key": "device",
+                                      "type": "string",
+                                      "value": "craftPhone"
+                                    },
+                                    {
+                                      "key": "attribute",
+                                      "type": "string",
+                                      "value": "state"
+                                    },
+                                    {
+                                      "key": "provider",
+                                      "type": "string",
+                                      "value": "sami"
+                                    }
+                                  ],
+                                  "outputParams": [
+                                    {
+                                      "key": "state",
+                                      "type": "entityKnowledge",
+                                      "value": "phoneState"
+                                    }
+                                  ]
+                                },
+                                "children": [],
+                                "id": "58aead91-e932-4f7e-92cd-775672464fbf",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "active": "false"
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "op1": {
+                                        "type": "entityKnowledge",
+                                        "value": "phoneState"
+                                      },
+                                      "op2": {
+                                        "type": "string",
+                                        "value": "standBy"
+                                      },
+                                      "op": "!="
+                                    },
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "active": "false"
+                                        },
+                                        "children": [
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {},
+                                            "children": [
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "no Learning"
+                                                },
+                                                "properties": {
+                                                  "op1": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "learning"
+                                                  },
+                                                  "op2": {
+                                                    "type": "boolean",
+                                                    "value": "false"
+                                                  },
+                                                  "op": "=="
+                                                },
+                                                "children": [],
+                                                "id": "8b0ae714-9936-4bf7-89fb-c7f10774efde",
+                                                "type": "condition"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": ""
+                                                },
+                                                "properties": {
+                                                  "destination": "learning",
+                                                  "op": {
+                                                    "type": "boolean",
+                                                    "value": "true"
+                                                  }
+                                                },
+                                                "children": [],
+                                                "id": "42fe1d4c-41e8-4d41-9a94-fead4cb7d0cb",
+                                                "type": "set"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": ""
+                                                },
+                                                "properties": {
+                                                  "destination": "previousVolume",
+                                                  "op": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "currentVolume"
+                                                  }
+                                                },
+                                                "children": [],
+                                                "id": "f781edd3-b76f-46fc-8c58-cbd7597c7d52",
+                                                "type": "set"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": ""
+                                                },
+                                                "properties": {
+                                                  "destination": "previousPause",
+                                                  "op": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "currentPause"
+                                                  }
+                                                },
+                                                "children": [],
+                                                "id": "b5fcfaa9-5be2-4792-9ee2-a6591735bbe8",
+                                                "type": "set"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "Set custom volume"
+                                                },
+                                                "properties": {
+                                                  "name": "SetDeviceValue",
+                                                  "inputParams": [
+                                                    {
+                                                      "key": "device",
+                                                      "type": "string",
+                                                      "value": "craftTV"
+                                                    },
+                                                    {
+                                                      "key": "attribute",
+                                                      "type": "string",
+                                                      "value": "volume"
+                                                    },
+                                                    {
+                                                      "key": "value",
+                                                      "type": "entityKnowledge",
+                                                      "value": "customVolume"
+                                                    },
+                                                    {
+                                                      "key": "provider",
+                                                      "type": "string",
+                                                      "value": "sami"
+                                                    }
+                                                  ],
+                                                  "outputParams": []
+                                                },
+                                                "children": [],
+                                                "id": "0978a328-e543-4d76-8973-520e213bbb82",
+                                                "type": "action"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "set custom pause"
+                                                },
+                                                "properties": {
+                                                  "name": "SetDeviceValue",
+                                                  "inputParams": [
+                                                    {
+                                                      "key": "device",
+                                                      "type": "string",
+                                                      "value": "craftTV"
+                                                    },
+                                                    {
+                                                      "key": "attribute",
+                                                      "type": "string",
+                                                      "value": "pause"
+                                                    },
+                                                    {
+                                                      "key": "value",
+                                                      "type": "entityKnowledge",
+                                                      "value": "customPause"
+                                                    },
+                                                    {
+                                                      "key": "provider",
+                                                      "type": "string",
+                                                      "value": "sami"
+                                                    }
+                                                  ],
+                                                  "outputParams": []
+                                                },
+                                                "children": [],
+                                                "id": "ed5bd283-efc8-4f93-b0be-31d42c55cfbe",
+                                                "type": "action"
+                                              }
+                                            ],
+                                            "id": "95e94882-2247-44dc-bc1d-5cf66a944ce1",
+                                            "type": "sequence"
+                                          },
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {},
+                                            "children": [
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "if volume has change"
+                                                },
+                                                "properties": {
+                                                  "op1": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "currentVolume"
+                                                  },
+                                                  "op2": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "customVolume"
+                                                  },
+                                                  "op": "!="
+                                                },
+                                                "children": [],
+                                                "id": "b4354dba-2fd7-489f-a642-449439a697ad",
+                                                "type": "condition"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": ""
+                                                },
+                                                "properties": {
+                                                  "destination": "customVolume",
+                                                  "op": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "currentVolume"
+                                                  }
+                                                },
+                                                "children": [],
+                                                "id": "583be4a2-10dc-47ec-b563-5971f8c725fd",
+                                                "type": "set"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "Set new low volume"
+                                                },
+                                                "properties": {
+                                                  "name": "SetDeviceValue",
+                                                  "inputParams": [
+                                                    {
+                                                      "key": "device",
+                                                      "type": "string",
+                                                      "value": "craftTV"
+                                                    },
+                                                    {
+                                                      "key": "attribute",
+                                                      "type": "string",
+                                                      "value": "volume"
+                                                    },
+                                                    {
+                                                      "key": "provider",
+                                                      "type": "string",
+                                                      "value": "sami"
+                                                    },
+                                                    {
+                                                      "key": "value",
+                                                      "type": "entityKnowledge",
+                                                      "value": "customValue"
+                                                    }
+                                                  ],
+                                                  "outputParams": []
+                                                },
+                                                "children": [],
+                                                "id": "2d37ea94-85a1-47d9-9450-65d26fe2e733",
+                                                "type": "action"
+                                              }
+                                            ],
+                                            "id": "d27b28c8-50dd-466d-bfaa-0d367eaef24c",
+                                            "type": "sequence"
+                                          },
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {},
+                                            "children": [
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "If pause has changed"
+                                                },
+                                                "properties": {
+                                                  "op1": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "currentPause"
+                                                  },
+                                                  "op2": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "customPause"
+                                                  },
+                                                  "op": "!="
+                                                },
+                                                "children": [],
+                                                "id": "d87c53de-3045-4d73-8186-58775b95d1c1",
+                                                "type": "condition"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": ""
+                                                },
+                                                "properties": {
+                                                  "destination": "customPause",
+                                                  "op": {
+                                                    "type": "entityKnowledge",
+                                                    "value": "currentPause"
+                                                  }
+                                                },
+                                                "children": [],
+                                                "id": "101fe9f1-9d13-4b49-a67e-f6d91ca8e36c",
+                                                "type": "set"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "Set new pause"
+                                                },
+                                                "properties": {
+                                                  "name": "SetDeviceValue",
+                                                  "inputParams": [
+                                                    {
+                                                      "key": "device",
+                                                      "type": "string",
+                                                      "value": "craftTV"
+                                                    },
+                                                    {
+                                                      "key": "attribute",
+                                                      "type": "string",
+                                                      "value": "pause"
+                                                    },
+                                                    {
+                                                      "key": "value",
+                                                      "type": "entityKnowledge",
+                                                      "value": "customPause"
+                                                    },
+                                                    {
+                                                      "key": "provider",
+                                                      "type": "string",
+                                                      "value": "sami"
+                                                    }
+                                                  ],
+                                                  "outputParams": []
+                                                },
+                                                "children": [],
+                                                "id": "6796942e-c0ae-47b4-9ff7-8e3a4a3a424b",
+                                                "type": "action"
+                                              }
+                                            ],
+                                            "id": "1c7255da-9628-47d0-acb6-89bfefef8807",
+                                            "type": "sequence"
+                                          }
+                                        ],
+                                        "id": "6d498bcc-ec5a-448b-bade-f20c2079923c",
+                                        "type": "priority"
+                                      }
+                                    ],
+                                    "id": "b871c2d1-513d-4c8f-8974-ea0d748aa17e",
+                                    "type": "condition"
+                                  },
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {
+                                      "op1": {
+                                        "type": "entityKnowledge",
+                                        "value": "phoneState"
+                                      },
+                                      "op2": {
+                                        "type": "string",
+                                        "value": "standBy"
+                                      },
+                                      "op": "=="
+                                    },
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "op1": {
+                                            "type": "entityKnowledge",
+                                            "value": "learning"
+                                          },
+                                          "op2": {
+                                            "type": "boolean",
+                                            "value": "true"
+                                          },
+                                          "op": "=="
+                                        },
+                                        "children": [
+                                          {
+                                            "activated": true,
+                                            "metadata": {
+                                              "label": ""
+                                            },
+                                            "properties": {},
+                                            "children": [
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "reset previous volume"
+                                                },
+                                                "properties": {
+                                                  "name": "SetDeviceValue",
+                                                  "inputParams": [
+                                                    {
+                                                      "key": "device",
+                                                      "type": "string",
+                                                      "value": "craftTV"
+                                                    },
+                                                    {
+                                                      "key": "attribute",
+                                                      "type": "string",
+                                                      "value": "volume"
+                                                    },
+                                                    {
+                                                      "key": "value",
+                                                      "type": "entityKnowledge",
+                                                      "value": "previousVolume"
+                                                    },
+                                                    {
+                                                      "key": "provider",
+                                                      "type": "string",
+                                                      "value": "sami"
+                                                    }
+                                                  ],
+                                                  "outputParams": []
+                                                },
+                                                "children": [],
+                                                "id": "8cf14bdc-a340-4cc4-8546-82108d1c7ba2",
+                                                "type": "action"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": "reset previous pause"
+                                                },
+                                                "properties": {
+                                                  "name": "SetDeviceValue",
+                                                  "inputParams": [
+                                                    {
+                                                      "key": "device",
+                                                      "type": "string",
+                                                      "value": "craftTV"
+                                                    },
+                                                    {
+                                                      "key": "attribute",
+                                                      "type": "string",
+                                                      "value": "pause"
+                                                    },
+                                                    {
+                                                      "key": "value",
+                                                      "type": "entityKnowledge",
+                                                      "value": "previousPause"
+                                                    },
+                                                    {
+                                                      "key": "provider",
+                                                      "type": "string",
+                                                      "value": "sami"
+                                                    }
+                                                  ],
+                                                  "outputParams": []
+                                                },
+                                                "children": [],
+                                                "id": "ba1a987b-17ef-4d5e-a370-2ca74fd152b6",
+                                                "type": "action"
+                                              },
+                                              {
+                                                "activated": true,
+                                                "metadata": {
+                                                  "label": ""
+                                                },
+                                                "properties": {
+                                                  "destination": "learning",
+                                                  "op": {
+                                                    "type": "boolean",
+                                                    "value": "false"
+                                                  }
+                                                },
+                                                "children": [],
+                                                "id": "5c834c4b-977f-4ec0-bcdb-b8cc8b75c727",
+                                                "type": "set"
+                                              }
+                                            ],
+                                            "id": "6af0114a-cf22-46a0-ac0c-fbefc53a8352",
+                                            "type": "sequence"
+                                          }
+                                        ],
+                                        "id": "709dd453-6afa-4726-9b3d-da5fcd5e13d1",
+                                        "type": "condition"
+                                      }
+                                    ],
+                                    "id": "bcd0246e-10ff-43b8-ab0b-987f4739f0ae",
+                                    "type": "condition"
+                                  }
+                                ],
+                                "id": "50611686-3c98-4af6-8fbf-985075619db6",
+                                "type": "priority"
+                              }
+                            ],
+                            "id": "5fab3c84-0557-42fb-ae56-235805daaa33",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "f913985f-7dd1-47a5-aaf9-02474a73247b",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": "No presence"
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "globalKnowledge",
+                            "value": "sensors.presence"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "false"
+                          },
+                          "op": "=="
+                        },
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "Get TV State"
+                                },
+                                "properties": {
+                                  "name": "GetDeviceValue",
+                                  "inputParams": [
+                                    {
+                                      "key": "device",
+                                      "type": "string",
+                                      "value": "craftTV"
+                                    },
+                                    {
+                                      "key": "attribute",
+                                      "type": "string",
+                                      "value": "state"
+                                    },
+                                    {
+                                      "key": "provider",
+                                      "type": "string",
+                                      "value": "sami"
+                                    }
+                                  ],
+                                  "outputParams": [
+                                    {
+                                      "key": "state",
+                                      "type": "entityKnowledge",
+                                      "value": "tvState"
+                                    }
+                                  ]
+                                },
+                                "children": [],
+                                "id": "66409996-8757-40d8-b187-b58636a47358",
+                                "type": "action"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "tvState"
+                                  },
+                                  "op2": {
+                                    "type": "string",
+                                    "value": "on"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "name": "AnswerUser",
+                                          "inputParams": [
+                                            {
+                                              "key": "message",
+                                              "type": "string",
+                                              "value": "Nobody at home => I switch off the TV !"
+                                            }
+                                          ],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "e6f6fcf5-9682-4776-96bc-a4678b11c195",
+                                        "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": "Switch off TV"
+                                        },
+                                        "properties": {
+                                          "name": "SetDeviceValue",
+                                          "inputParams": [
+                                            {
+                                              "key": "device",
+                                              "type": "string",
+                                              "value": "craftTV"
+                                            },
+                                            {
+                                              "key": "attribute",
+                                              "type": "string",
+                                              "value": "state"
+                                            },
+                                            {
+                                              "key": "value",
+                                              "type": "string",
+                                              "value": "off"
+                                            },
+                                            {
+                                              "key": "provider",
+                                              "type": "string",
+                                              "value": "sami"
+                                            }
+                                          ],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "fb9d8f78-0f30-4ebd-acbe-3de416d5d77f",
+                                        "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "name": "AskUser",
+                                          "inputParams": [
+                                            {
+                                              "key": "message",
+                                              "type": "string",
+                                              "value": "Should I also activate the alarm ?"
+                                            }
+                                          ],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "0835bb2b-337a-47ca-8dae-b1a6dce67dda",
+                                        "type": "action"
+                                      }
+                                    ],
+                                    "id": "39c5c5a1-be2b-4885-a0f1-26ba034d091b",
+                                    "type": "sequence"
+                                  }
+                                ],
+                                "id": "624d9459-8af1-4b49-a52b-7cee08c40745",
+                                "type": "condition"
+                              }
+                            ],
+                            "id": "5a98b826-8e6f-4a69-bcd2-b798dfb7c61d",
+                            "type": "sequence"
+                          }
+                        ],
+                        "id": "d3de5f02-cd51-4991-92d2-1ab8c5145793",
+                        "type": "condition"
+                      }
+                    ],
+                    "id": "3786984b-846e-40a8-99b7-584856825f66",
+                    "type": "priority"
+                  }
+                ],
+                "id": "f844561a-663b-453a-ade6-a8ffa37a01d7",
+                "type": "success"
+              }
+            ],
+            "id": "68b3c504-015f-4ada-9617-d34452f28317",
+            "type": "until"
+          }
+        ],
+        "id": "a442e808-bed3-4ddd-8989-ea0abc8f7084",
+        "type": "sequence"
+      }
+    ],
+    "id": "0f5a374f-402d-4e58-b311-702c21d80a95"
+  }
+]

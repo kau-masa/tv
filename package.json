@@ -1,7 +1,7 @@
 {
-  "name": "demo.SmartHome",
+  "name": "demo.SmartTV",
   "version": "0.0.1",
-  "description": "craft ai SmartHome demo",
+  "description": "craft ai SmartTV demo",
   "author": "craft ai <contact@craft.ai>",
   "private": true,
   "main": "server.js",

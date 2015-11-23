@@ -1,0 +1,172 @@
+[
+  {
+    "version": "1.2.0"
+  },
+  {
+    "activated": true,
+    "metadata": {
+      "label": ""
+    },
+    "properties": {},
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Get current Phone State"
+            },
+            "properties": {
+              "name": "GetDeviceValue",
+              "inputParams": [
+                {
+                  "key": "device",
+                  "type": "string",
+                  "value": "craftPhone"
+                },
+                {
+                  "key": "attribute",
+                  "type": "string",
+                  "value": "state"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "state",
+                  "type": "entityKnowledge",
+                  "value": "PhoneState"
+                }
+              ]
+            },
+            "children": [],
+            "id": "33ee4cf5-951e-4552-8446-cd22432887f5",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "active": "false"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "PhoneState"
+                  },
+                  "op2": {
+                    "type": "string",
+                    "value": "isCalling"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Set low volume"
+                    },
+                    "properties": {
+                      "name": "SetDeviceValue",
+                      "inputParams": [
+                        {
+                          "key": "device",
+                          "type": "string",
+                          "value": "craftTV"
+                        },
+                        {
+                          "key": "attribute",
+                          "type": "string",
+                          "value": "volume"
+                        },
+                        {
+                          "key": "value",
+                          "type": "integer",
+                          "value": "20"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "e987c592-6abe-411e-b73c-e2822a7b5dd5",
+                    "type": "action"
+                  }
+                ],
+                "id": "19a95c01-59dc-4cb9-b78c-c0eb032ef22e",
+                "type": "condition"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "PhoneState"
+                  },
+                  "op2": {
+                    "type": "string",
+                    "value": "isCalling"
+                  },
+                  "op": "!="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Set normal volume"
+                    },
+                    "properties": {
+                      "name": "SetDeviceValue",
+                      "inputParams": [
+                        {
+                          "key": "device",
+                          "type": "string",
+                          "value": "craftTV"
+                        },
+                        {
+                          "key": "attribute",
+                          "type": "string",
+                          "value": "volume"
+                        },
+                        {
+                          "key": "value",
+                          "type": "integer",
+                          "value": "70"
+                        }
+                      ],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "c26d2ed3-90c7-4d4f-998c-e392d05211f0",
+                    "type": "action"
+                  }
+                ],
+                "id": "1648e2a7-5241-4240-ab76-cf1caacc3e80",
+                "type": "condition"
+              }
+            ],
+            "id": "1008310c-2d2c-4755-a6f5-736b5d5d01c0",
+            "type": "priority"
+          }
+        ],
+        "id": "c112203c-ed0b-411d-ade2-51b87e525f5f",
+        "type": "sequence"
+      }
+    ],
+    "id": "7ea0d1c9-29f1-40e6-a483-d44b7c87029e"
+  }
+]

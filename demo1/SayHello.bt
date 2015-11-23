@@ -1,0 +1,35 @@
+[
+  {
+    "version": "1.2.0"
+  },
+  {
+    "activated": true,
+    "metadata": {
+      "label": ""
+    },
+    "properties": {},
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": ""
+        },
+        "properties": {
+          "name": "Speech",
+          "inputParams": [
+            {
+              "key": "message",
+              "type": "string",
+              "value": "Hello"
+            }
+          ],
+          "outputParams": []
+        },
+        "children": [],
+        "id": "c0600432-f7c8-45cd-9494-f8b0c95d15c4",
+        "type": "action"
+      }
+    ],
+    "id": "395aa378-4105-45de-8e59-d96bac3d0b36"
+  }
+]

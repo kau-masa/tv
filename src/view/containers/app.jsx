@@ -31,7 +31,7 @@ export default class App extends React.Component {
       return registerActions();
     })
     .then(() => {
-      return Runtime.createAgent( 'agent/CraftTV2.bt', {} )
+      return Runtime.createAgent( 'demo1/SayHello.bt', {} )
     })
     .then(()=>{
       return Runtime.updateInstanceKnowledge('sensors', { presence: homePresenceStore.getPresenceState() });
