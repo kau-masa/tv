@@ -15,21 +15,21 @@
           "label": ""
         },
         "properties": {
-          "name": "Speech",
+          "name": "Log",
           "inputParams": [
             {
               "key": "message",
               "type": "string",
-              "value": "Hello"
+              "value": "Hello World!"
             }
           ],
           "outputParams": []
         },
         "children": [],
-        "id": "c0600432-f7c8-45cd-9494-f8b0c95d15c4",
+        "id": "90217356-22b8-462b-9f2d-a3044ed8fa7e",
         "type": "action"
       }
     ],
-    "id": "395aa378-4105-45de-8e59-d96bac3d0b36"
+    "id": "5ab5751a-8773-4be5-a90c-3a441a704e0b"
   }
 ]

@@ -5,14 +5,14 @@ var config = require('./webpack.config');
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
+  contentBase: './app/',
   historyApiFallback: true,
   stats: {
     colors: true
   }
-}).listen(4010, 'localhost', function (err) {
+}).listen(4000, 'localhost', function (err) {
   if (err) {
     console.log(err);
   }
-
-  console.log('Listening at localhost:4010');
+  console.log('Listening at localhost:4000');
 });

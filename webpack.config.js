@@ -4,14 +4,14 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:4010',
+    'webpack-dev-server/client?http://localhost:4000',
     'webpack/hot/only-dev-server',
     './src/main'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'app'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -28,6 +28,9 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   module: {
+    preLoaders : [
+      { test: /\.json$/, loader: 'json'}
+    ],
     loaders: [{
       test: /\.jsx?$/,
       loaders: ['react-hot', 'babel'],
@@ -35,6 +38,9 @@ module.exports = {
     }, {
       test: /\.css?$/,
       loaders: ['style', 'raw']
+    }, {
+      test: /\.(png|svg|eot|ttf|woff)$/,
+      loaders: ['url']
     }]
   }
 };

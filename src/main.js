@@ -1,13 +1,13 @@
 import React from 'react';
-import App from './view/containers/app';
-import {destroySimulationSyncro} from './runtime.js';
+import App from './view/app';
+import {destroySimulation} from 'craft-ai-client-js';
+import ReactDOM from 'react-dom';
 
-window.onbeforeunload = function onBeforeUnload() {
-	console.log("cleanup");
-	destroyInstanceSync();
-}
-
-React.render(
+ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
+
+window.onbeforeunload = function onBeforeUnload() {
+  destroySimulation();
+}
