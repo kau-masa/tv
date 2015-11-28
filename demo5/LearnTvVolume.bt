@@ -123,11 +123,6 @@
                               "key": "attribute",
                               "type": "string",
                               "value": "volume"
-                            },
-                            {
-                              "key": "provider",
-                              "type": "string",
-                              "value": "sami"
                             }
                           ],
                           "outputParams": [
@@ -159,11 +154,6 @@
                               "key": "attribute",
                               "type": "string",
                               "value": "state"
-                            },
-                            {
-                              "key": "provider",
-                              "type": "string",
-                              "value": "sami"
                             }
                           ],
                           "outputParams": [
@@ -294,11 +284,6 @@
                                               "key": "value",
                                               "type": "entityKnowledge",
                                               "value": "customVolume"
-                                            },
-                                            {
-                                              "key": "provider",
-                                              "type": "string",
-                                              "value": "sami"
                                             }
                                           ],
                                           "outputParams": []
@@ -373,14 +358,9 @@
                                               "value": "volume"
                                             },
                                             {
-                                              "key": "provider",
-                                              "type": "string",
-                                              "value": "sami"
-                                            },
-                                            {
                                               "key": "value",
                                               "type": "entityKnowledge",
-                                              "value": "customValue"
+                                              "value": "customVolume"
                                             }
                                           ],
                                           "outputParams": []
@@ -464,52 +444,12 @@
                                               "key": "value",
                                               "type": "entityKnowledge",
                                               "value": "previousVolume"
-                                            },
-                                            {
-                                              "key": "provider",
-                                              "type": "string",
-                                              "value": "sami"
                                             }
                                           ],
                                           "outputParams": []
                                         },
                                         "children": [],
                                         "id": "8cf14bdc-a340-4cc4-8546-82108d1c7ba2",
-                                        "type": "action"
-                                      },
-                                      {
-                                        "activated": true,
-                                        "metadata": {
-                                          "label": "reset previous pause"
-                                        },
-                                        "properties": {
-                                          "name": "SetDeviceValue",
-                                          "inputParams": [
-                                            {
-                                              "key": "device",
-                                              "type": "string",
-                                              "value": "craftTV"
-                                            },
-                                            {
-                                              "key": "attribute",
-                                              "type": "string",
-                                              "value": "pause"
-                                            },
-                                            {
-                                              "key": "value",
-                                              "type": "entityKnowledge",
-                                              "value": "previousPause"
-                                            },
-                                            {
-                                              "key": "provider",
-                                              "type": "string",
-                                              "value": "sami"
-                                            }
-                                          ],
-                                          "outputParams": []
-                                        },
-                                        "children": [],
-                                        "id": "ba1a987b-17ef-4d5e-a370-2ca74fd152b6",
                                         "type": "action"
                                       },
                                       {
