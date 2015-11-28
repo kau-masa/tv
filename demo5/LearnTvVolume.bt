@@ -65,7 +65,7 @@
                   "label": ""
                 },
                 "properties": {
-                  "destination": "currentVolme",
+                  "destination": "currentVolume",
                   "op": {
                     "type": "integer",
                     "value": "50"
