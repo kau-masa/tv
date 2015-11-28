@@ -245,11 +245,6 @@
                                       "key": "attribute",
                                       "type": "string",
                                       "value": "state"
-                                    },
-                                    {
-                                      "key": "provider",
-                                      "type": "string",
-                                      "value": "sami"
                                     }
                                   ],
                                   "outputParams": [
@@ -281,11 +276,6 @@
                                       "key": "attribute",
                                       "type": "string",
                                       "value": "pause"
-                                    },
-                                    {
-                                      "key": "provider",
-                                      "type": "string",
-                                      "value": "sami"
                                     }
                                   ],
                                   "outputParams": [
@@ -353,11 +343,6 @@
                                       "key": "attribute",
                                       "type": "string",
                                       "value": "state"
-                                    },
-                                    {
-                                      "key": "provider",
-                                      "type": "string",
-                                      "value": "sami"
                                     }
                                   ],
                                   "outputParams": [
@@ -920,11 +905,6 @@
                                       "key": "attribute",
                                       "type": "string",
                                       "value": "state"
-                                    },
-                                    {
-                                      "key": "provider",
-                                      "type": "string",
-                                      "value": "sami"
                                     }
                                   ],
                                   "outputParams": [
@@ -1005,37 +985,12 @@
                                               "key": "value",
                                               "type": "string",
                                               "value": "off"
-                                            },
-                                            {
-                                              "key": "provider",
-                                              "type": "string",
-                                              "value": "sami"
                                             }
                                           ],
                                           "outputParams": []
                                         },
                                         "children": [],
                                         "id": "fb9d8f78-0f30-4ebd-acbe-3de416d5d77f",
-                                        "type": "action"
-                                      },
-                                      {
-                                        "activated": true,
-                                        "metadata": {
-                                          "label": ""
-                                        },
-                                        "properties": {
-                                          "name": "AskUser",
-                                          "inputParams": [
-                                            {
-                                              "key": "message",
-                                              "type": "string",
-                                              "value": "Should I also activate the alarm ?"
-                                            }
-                                          ],
-                                          "outputParams": []
-                                        },
-                                        "children": [],
-                                        "id": "0835bb2b-337a-47ca-8dae-b1a6dce67dda",
                                         "type": "action"
                                       }
                                     ],
