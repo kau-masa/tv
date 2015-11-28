@@ -65,7 +65,7 @@
                   "label": ""
                 },
                 "properties": {
-                  "destination": "learning",
+                  "destination": "previousVolume",
                   "op": {
                     "type": "boolean",
                     "value": "false"
@@ -73,22 +73,6 @@
                 },
                 "children": [],
                 "id": "9c4da431-79fa-4f06-bd11-ca587fc2226f",
-                "type": "set"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "destination": "",
-                  "op": {
-                    "type": "string",
-                    "value": ""
-                  }
-                },
-                "children": [],
-                "id": "aadb5392-7647-46b8-89e8-e1e1030254e0",
                 "type": "set"
               },
               {
