@@ -44,7 +44,7 @@
                 "type": "action"
               },
               {
-                "activated": false,
+                "activated": true,
                 "metadata": {
                   "label": ""
                 },
@@ -60,7 +60,7 @@
                 "type": "set"
               },
               {
-                "activated": false,
+                "activated": true,
                 "metadata": {
                   "label": ""
                 },
@@ -76,15 +76,31 @@
                 "type": "set"
               },
               {
-                "activated": false,
+                "activated": true,
                 "metadata": {
                   "label": ""
                 },
                 "properties": {
-                  "destination": "previousVolume",
+                  "destination": "",
                   "op": {
-                    "type": "entityKnowledge",
-                    "value": "currentVolume"
+                    "type": "string",
+                    "value": ""
+                  }
+                },
+                "children": [],
+                "id": "aadb5392-7647-46b8-89e8-e1e1030254e0",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "learning",
+                  "op": {
+                    "type": "boolean",
+                    "value": "false"
                   }
                 },
                 "children": [],
