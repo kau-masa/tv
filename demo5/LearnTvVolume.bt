@@ -120,7 +120,7 @@
                 "properties": {},
                 "children": [
                   {
-                    "activated": false,
+                    "activated": true,
                     "metadata": {
                       "label": ""
                     },
@@ -189,7 +189,7 @@
                         "type": "action"
                       },
                       {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
