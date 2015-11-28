@@ -189,7 +189,7 @@
                         "type": "action"
                       },
                       {
-                        "activated": false,
+                        "activated": true,
                         "metadata": {
                           "label": ""
                         },
@@ -215,7 +215,7 @@
                             },
                             "children": [
                               {
-                                "activated": true,
+                                "activated": false,
                                 "metadata": {
                                   "label": ""
                                 },
