@@ -969,7 +969,7 @@
                                           "label": ""
                                         },
                                         "properties": {
-                                          "name": "AnswerUser",
+                                          "name": "Speech",
                                           "inputParams": [
                                             {
                                               "key": "message",
