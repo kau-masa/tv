@@ -26,7 +26,7 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": ""
+                  "label": "Say Hello"
                 },
                 "properties": {
                   "name": "Speech",
