@@ -65,10 +65,26 @@
                   "label": ""
                 },
                 "properties": {
+                  "destination": "currentVolme",
+                  "op": {
+                    "type": "integer",
+                    "value": "50"
+                  }
+                },
+                "children": [],
+                "id": "c88f5225-689e-45f1-a72f-b8d34062c604",
+                "type": "set"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
                   "destination": "previousVolume",
                   "op": {
-                    "type": "boolean",
-                    "value": "false"
+                    "type": "entityKnowledge",
+                    "value": "currentVolume"
                   }
                 },
                 "children": [],
