@@ -327,11 +327,6 @@
                                       "key": "attribute",
                                       "type": "string",
                                       "value": "volume"
-                                    },
-                                    {
-                                      "key": "provider",
-                                      "type": "string",
-                                      "value": "sami"
                                     }
                                   ],
                                   "outputParams": [
@@ -509,11 +504,6 @@
                                                       "key": "value",
                                                       "type": "entityKnowledge",
                                                       "value": "customVolume"
-                                                    },
-                                                    {
-                                                      "key": "provider",
-                                                      "type": "string",
-                                                      "value": "sami"
                                                     }
                                                   ],
                                                   "outputParams": []
@@ -544,11 +534,6 @@
                                                       "key": "value",
                                                       "type": "entityKnowledge",
                                                       "value": "customPause"
-                                                    },
-                                                    {
-                                                      "key": "provider",
-                                                      "type": "string",
-                                                      "value": "sami"
                                                     }
                                                   ],
                                                   "outputParams": []
@@ -621,11 +606,6 @@
                                                       "key": "attribute",
                                                       "type": "string",
                                                       "value": "volume"
-                                                    },
-                                                    {
-                                                      "key": "provider",
-                                                      "type": "string",
-                                                      "value": "sami"
                                                     },
                                                     {
                                                       "key": "value",
@@ -708,11 +688,6 @@
                                                       "key": "value",
                                                       "type": "entityKnowledge",
                                                       "value": "customPause"
-                                                    },
-                                                    {
-                                                      "key": "provider",
-                                                      "type": "string",
-                                                      "value": "sami"
                                                     }
                                                   ],
                                                   "outputParams": []
@@ -796,11 +771,6 @@
                                                       "key": "value",
                                                       "type": "entityKnowledge",
                                                       "value": "previousVolume"
-                                                    },
-                                                    {
-                                                      "key": "provider",
-                                                      "type": "string",
-                                                      "value": "sami"
                                                     }
                                                   ],
                                                   "outputParams": []
@@ -831,11 +801,6 @@
                                                       "key": "value",
                                                       "type": "entityKnowledge",
                                                       "value": "previousPause"
-                                                    },
-                                                    {
-                                                      "key": "provider",
-                                                      "type": "string",
-                                                      "value": "sami"
                                                     }
                                                   ],
                                                   "outputParams": []
