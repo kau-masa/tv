@@ -120,7 +120,7 @@
                 "properties": {},
                 "children": [
                   {
-                    "activated": true,
+                    "activated": false,
                     "metadata": {
                       "label": ""
                     },
