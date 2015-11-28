@@ -29,6 +29,26 @@
                   "label": ""
                 },
                 "properties": {
+                  "name": "Speech",
+                  "inputParams": [
+                    {
+                      "key": "message",
+                      "type": "string",
+                      "value": "Hello!"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "6063f760-a8a0-44f4-b586-88282bae32a7",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
                   "destination": "customVolume",
                   "op": {
                     "type": "integer",
